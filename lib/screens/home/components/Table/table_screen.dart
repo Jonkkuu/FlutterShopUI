@@ -23,6 +23,16 @@ class TableScreen extends StatelessWidget {
         ),
         actions: <Widget>[
           IconButton(
+              icon: SvgPicture.asset("assets/icons/maps.svg",
+                  // ignore: deprecated_member_use
+                  color: kTextColor),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HomeScreen()),
+                );
+              }),
+          IconButton(
               icon: SvgPicture.asset("assets/icons/sofa.svg",
                   // ignore: deprecated_member_use
                   color: kTextColor),

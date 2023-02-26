@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutterproject/screens/home/components/Chair/chair_screen.dart';
-import 'package:flutterproject/screens/home/components/Table/table_screen.dart';
-import 'package:flutterproject/screens/home/home_screen.dart';
+
 import 'package:flutterproject/constants.dart';
+import 'package:flutterproject/screens/home/home_screen.dart';
 
 void main() {
   runApp(const MyApp());

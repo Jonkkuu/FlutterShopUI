@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:flutterproject/screens/home/components/maps/maps.dart';
 import 'package:flutterproject/screens/home/home_screen.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
 import '../../../../constants.dart';
 import '../Chair/chair_screen.dart';
 import '../Table/table_screen.dart';
@@ -19,6 +21,16 @@ class GamingScreen extends StatelessWidget {
           onPressed: () {},
         ),
         actions: <Widget>[
+          IconButton(
+              icon: SvgPicture.asset("assets/icons/maps.svg",
+                  // ignore: deprecated_member_use
+                  color: kTextColor),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const MapScreen()),
+                );
+              }),
           IconButton(
               icon: SvgPicture.asset("assets/icons/sofa.svg",
                   // ignore: deprecated_member_use
